@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>MotoGP Hub</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(190,25,75,255);
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 5px;
+        }
+        .topRight {
+            position: absolute;
+            top: 0;
+            right: 0;
+        } 
+        .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    }
+        .gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+    </style>
+</head>
+
+<body>
+    <header><h1>MotoGP Hub</h1></header>
+
+    <a href="index.html">
+        <img src="motogp.png"
+        height="150"
+        width="150"
+        class="topRight Logo">
+    </a>
+
+
+    <nav>
+        <a href="index.html" id="homeButton" class="button">Home</a>
+        <a href="event_calendar.html" id="scheduleButton" class="button">Schedule</a>
+        <a href="current_members.html" id="membersButton"class="button">Members</a>
+        <a href="contact_us.html" id="contactButton"class="button">Contact Us</a>
+    </nav>
+
+    <main>
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+            <img src="PedroAcosta.png">
+            <img src="AlexMarquez.png">
+            <img src="Fabio.png">
+        </div>
+    </main>
+    
+    <aside></aside>
+    
+    <footer></footer>
+
+    <script>
+        // Logo
+        document.querySelector("img.Logo").addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+        // Navigation buttons
+        document.getElementById("scheduleButton").addEventListener("click", function() {
+            window.location.href = "event_calendar.html";
+        });
+        document.getElementById("homeButton").addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+        document.getElementById("membersButton").addEventListener("click", function() {
+            window.location.href = "current_members.html";
+        });
+        document.getElementById("contactButton").addEventListener("click", function() {
+            window.location.href = "contact_us.html";
+        });
+    </script>
+</body>
+</html>

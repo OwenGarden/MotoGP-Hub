@@ -13,7 +13,7 @@
             font-size: 16px;
             margin: 5px;
         }
-        .top-right {
+        .topRight {
             position: absolute;
             top: 0;
             right: 0;
@@ -28,27 +28,38 @@
         <img src="motogp.png"
         height="150"
         width="150"
-        class="top-right">
+        class="topRight Logo">
 
     <nav>
         <a href="index.html" id="homeButton" class="button">Home</a>
+        <a href="event_calendar.html" id="scheduleButton" class="button">Schedule</a>
         <a href="img_gallery.html" id="imgButton" class="button">Gallery</a>
-        <a href="current_members.html" id="membersButton"class="button">Current Members</a>
-        <a href="event_calendar.html" id="eventButton" class="button">Events</a>
-        <a href="contact_us.html" id="contactButton"class="button">Contact Us</a>
+        <a href="current_members.html" id="membersButton"class="button">Members</a>
     </nav>
 
     <main>
+        <h2>Contact Us</h2>
+        <h3>Please utilise this form to indicate whether you have a suggestion for the website or are experiencing any issues.</h3>
         <div>
             <form>
                 <fieldset>
                     <legend>Contact Us using the below form.</legend>
                     <label for="name">Name:</label>
-                    <input type="text" name="name" value=""/> <br/>
+                    <input type="text" id="name" name="name" value=""/> <br/>
                     <label for="email">Email:</label>
-                    <input type="text" name="email" value=""/> <br/>
+                    <input type="text" id="email" name="email" value=""/> <br/>
+                    
+                    <label for="membershipStatus">Membership Status:</label><br/>
+                    <input type="radio" id="member" name="membershipStatus" value="Member">
+                    <label for="member">Member</label><br/>
+                    <input type="radio" id="nonMember" name="membershipStatus" value="Non-Member">
+                    <label for="nonMember">Non-Member</label><br/>
+                    
                     <label for="comments">Comments:</label>
-                    <input type="text" name="comments" value=""/> <br/>
+                    <input type="text" id="comments" name="comments" value=""/> <br/>
+                    
+                    <label for="fileAttachment">Attach a file:</label>
+                    <input type="file" id="fileAttachment" name="fileAttachment"><br/>
                 </fieldset>
                 <button type="button" onclick="refreshForm()">Send</button>
             </form>
@@ -57,11 +68,22 @@
     
     <script>
         function refreshForm() {
+            
             document.getElementsByName("name")[0].value = "";
             document.getElementsByName("email")[0].value = "";
             document.getElementsByName("comments")[0].value = "";
+    
+            
+            let checkButtons = document.getElementsByName("membershipStatus");
+            for (let i = 0; i < checkButtons.length; i++) {
+                checkButtons[i].checked = false;
+            }
+    
+            
+            document.getElementById("fileAttachment").value = "";
         }
     </script>
+    
     
     
     <aside></aside>
@@ -69,11 +91,10 @@
     <footer></footer>
 
     <script>
-        document.querySelector("img.top-right").addEventListener("click", function() {
+        document.querySelector("img.Logo").addEventListener("click", function() {
             window.location.href = "index.html";
         });
-
-        document.getElementById("eventButton").addEventListener("click", function() {
+        document.getElementById("scheduleButton").addEventListener("click", function() {
             window.location.href = "event_calendar.html";
         });
         document.getElementById("homeButton").addEventListener("click", function() {
@@ -84,9 +105,6 @@
         });
         document.getElementById("membersButton").addEventListener("click", function() {
             window.location.href = "current_members.html";
-        });
-        document.getElementById("contactButton").addEventListener("click", function() {
-            window.location.href = "contact_us.html";
         });
     </script>
 </body>

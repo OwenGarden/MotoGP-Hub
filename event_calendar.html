@@ -13,7 +13,7 @@
             font-size: 16px;
             margin: 5px;
         }
-        .top-right {
+        .topRight {
             position: absolute;
             top: 0;
             right: 0;
@@ -28,17 +28,17 @@
         <img src="motogp.png"
         height="150"
         width="150"
-        class="top-right">
+        class="topRight Logo">
 
     <nav>
         <a href="index.html" id="homeButton" class="button">Home</a>
         <a href="img_gallery.html" id="imgButton" class="button">Gallery</a>
-        <a href="current_members.html" id="membersButton"class="button">Current Members</a>
-        <a href="event_calendar.html" id="eventButton" class="button">Events</a>
+        <a href="current_members.html" id="membersButton"class="button">Members</a>
         <a href="contact_us.html" id="contactButton"class="button">Contact Us</a>
     </nav>
 
     <main>
+        <h2>Season Schedule</h2>
         <div>
                 <table>
             <tr>
@@ -60,12 +60,8 @@
     <footer></footer>
 
     <script>
-        document.querySelector("img.top-right").addEventListener("click", function() {
+        document.querySelector("img.Logo").addEventListener("click", function() {
             window.location.href = "index.html";
-        });
-
-        document.getElementById("eventButton").addEventListener("click", function() {
-            window.location.href = "event_calendar.html";
         });
         document.getElementById("homeButton").addEventListener("click", function() {
             window.location.href = "index.html";

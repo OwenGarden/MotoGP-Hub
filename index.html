@@ -13,7 +13,7 @@
             font-size: 16px;
             margin: 5px;
         }
-        .top-right {
+        .topRight {
             position: absolute;
             top: 0;
             right: 0;
@@ -28,18 +28,19 @@
         <img src="motogp.png"
         height="150"
         width="150"
-        class="top-right">
+        class="topRight Logo">
     </a>
 
 
     <nav>
-        <a href="event_calendar.html" id="eventButton" class="button">Events</a>
+        <a href="event_calendar.html" id="scheduleButton" class="button">Schedule</a>
         <a href="img_gallery.html" id="imgButton" class="button">Gallery</a>
-        <a href="current_members.html" id="membersButton"class="button">Current Members</a>
+        <a href="current_members.html" id="membersButton"class="button">Members</a>
         <a href="contact_us.html" id="contactButton"class="button">Contact Us</a>
     </nav>
 
     <main>
+        <h2>Homepage</h2>
         <div>
             <p>Welcome to the MotoGP Hub! Here you can catch all the latest news and check the schedule for the upcoming season.</p>
             <!--<a class="twitter-timeline" href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw">Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
@@ -52,14 +53,12 @@
 
     <script>
         // Logo
-        document.querySelector("img.top-right").addEventListener("click", function() {
+        document.querySelector("img.Logo").addEventListener("click", function() {
             window.location.href = "index.html";
         });
-
         // Navigation buttons
-        document.getElementById("eventButton").addEventListener("click", function() {
+        document.getElementById("scheduleButton").addEventListener("click", function() {
             window.location.href = "event_calendar.html";
-
         });
         document.getElementById("imgButton").addEventListener("click", function() {
             window.location.href = "img_gallery.html";
