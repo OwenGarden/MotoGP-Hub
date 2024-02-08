@@ -7,7 +7,7 @@
             padding: 10px 15px;
             border: none;
             border-radius: 5px;
-            background-color: #ff0000;
+            background-color: rgba(190,25,75,255);
             color: white;
             text-decoration: none;
             font-size: 16px;
@@ -23,6 +23,12 @@
 
 <body>
     <header><h1>Motorsport</h1></header>
+
+    <a href="index.html">
+        <img src="motogp.png"
+        height="150"
+        width="150"
+        class="top-right">
 
     <nav>
         <a href="index.html" id="homeButton" class="button">Home</a>
@@ -54,6 +60,10 @@
     <footer></footer>
 
     <script>
+        document.querySelector("img.top-right").addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+
         document.getElementById("eventButton").addEventListener("click", function() {
             window.location.href = "event_calendar.html";
         });

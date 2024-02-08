@@ -7,7 +7,7 @@
             padding: 10px 15px;
             border: none;
             border-radius: 5px;
-            background-color: #ff0000;
+            background-color: rgba(190,25,75,255);
             color: white;
             text-decoration: none;
             font-size: 16px;
@@ -24,19 +24,25 @@
 <body>
     <header><h1>Motorsport</h1></header>
 
+    <a href="index.html">
+        <img src="motogp.png"
+        height="150"
+        width="150"
+        class="top-right">
+    </a>
+
+
     <nav>
-        <a href="index.html" id="homeButton" class="button">Home</a>
+        <a href="event_calendar.html" id="eventButton" class="button">Events</a>
         <a href="img_gallery.html" id="imgButton" class="button">Gallery</a>
         <a href="current_members.html" id="membersButton"class="button">Current Members</a>
-        <a href="event_calendar.html" id="eventButton" class="button">Events</a>
         <a href="contact_us.html" id="contactButton"class="button">Contact Us</a>
     </nav>
 
     <main>
         <div>
             <p>This is a website that will display schedules, race results, and more for many motorsport series.</p>
-            <img src="images/f1.jpg" class="top-right">
-            <a class="twitter-timeline" href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw">Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            <!--<a class="twitter-timeline" href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw">Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
         </div>
     </main>
     
@@ -45,11 +51,15 @@
     <footer></footer>
 
     <script>
+        // Logo
+        document.querySelector("img.top-right").addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+
+        // Navigation buttons
         document.getElementById("eventButton").addEventListener("click", function() {
             window.location.href = "event_calendar.html";
-        });
-        document.getElementById("homeButton").addEventListener("click", function() {
-            window.location.href = "index.html";
+
         });
         document.getElementById("imgButton").addEventListener("click", function() {
             window.location.href = "img_gallery.html";
