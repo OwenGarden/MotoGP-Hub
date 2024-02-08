@@ -36,15 +36,27 @@
         <div>
             <form>
                 <fieldset>
-                <legend>Contact Us using the below form.</legend>
-                <label for="name">Name:</label>
-                <input type="text" name="name" value=""/> <br/>
-                <label for="Email">Name:</label>
-                <input type="text" name="Email" value=""/> <br/>
+                    <legend>Contact Us using the below form.</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" value=""/> <br/>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" value=""/> <br/>
+                    <label for="comments">Comments:</label>
+                    <input type="text" name="comments" value=""/> <br/>
                 </fieldset>
-                </form>
+                <button type="button" onclick="refreshForm()">Send</button>
+            </form>
         </div>
     </main>
+    
+    <script>
+        function refreshForm() {
+            document.getElementsByName("name")[0].value = "";
+            document.getElementsByName("email")[0].value = "";
+            document.getElementsByName("comments")[0].value = "";
+        }
+    </script>
+    
     
     <aside></aside>
     
