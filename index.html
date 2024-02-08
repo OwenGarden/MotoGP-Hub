@@ -1,46 +1,54 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Motorsport</title>
-        <style>
-            .button {
-                display: inline-block;
-                padding: 10px 15px;
-                border: none;
-                border-radius: 5px;
-                background-color: #ff0000;
-                color: white;
-                text-decoration: none;
-                font-size: 16px;
-                margin: 5px;
-            }
-            .top-right {
-                position: absolute;
-                top: 0;
-                right: 0;
-            }    
-        </style>
-    </head>
+<head>
+    <title>Motorsport</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff0000;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 5px;
+        }
+        .top-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }    
+    </style>
+</head>
 
-    <Body>
-        <header><h1>Motorsport</h1></header>
+<body>
+    <header><h1>Motorsport</h1></header>
 
-        <nav>
-            <a href="home.html" class="button">Home</a>
-            <a href="img_gallery.html" class="button">Gallery</a>
-            <a href="current_members.html" class="button">Current Members</a>
-            <a href="event_calendar.html" class="button">Events</a>
-            <a href="contact_us.html" class="button">Contact Us</a>
-        </nav>
+    <nav>
+        <a href="home.html" class="button">Home</a>
+        <a href="img_gallery.html" class="button">Gallery</a>
+        <a href="current_members.html" class="button">Current Members</a>
+        <a href="event_calendar.html" id="eventButton" class="button">Events</a>
+        <a href="contact_us.html" class="button">Contact Us</a>
+    </nav>
 
-        <main>
-            <div>
-                <p>This is a website that will display schedule's, race results and more for many motorsport series'</p>
-                <img src="C:/Users/oggar/Downloads/VS/CM1114/images/f1.jpg" class="top-right">
-            </div>
-        </main>
-        
-        <aside></aside>
-        
-        <footer></footer>
-    </Body>
+    <main>
+        <div>
+            <p>This is a website that will display schedules, race results, and more for many motorsport series.</p>
+            <img src="C:/Users/oggar/Downloads/VS/CM1114/images/f1.jpg" class="top-right">
+            <a class="twitter-timeline" href="https://twitter.com/XDevelopers?ref_src=twsrc%5Etfw">Tweets by XDevelopers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+        </div>
+    </main>
+    
+    <aside></aside>
+    
+    <footer></footer>
+
+    <script>
+        document.getElementById("eventButton").addEventListener("click", function() {
+            window.location.href = "event_calendar.html";
+        });
+    </script>
+</body>
 </html>
