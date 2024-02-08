@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Motorsport</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff0000;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 5px;
+        }
+        .top-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }    
+    </style>
+</head>
+
+<body>
+    <header><h1>Motorsport</h1></header>
+
+    <nav>
+        <a href="index.html" id="homeButton" class="button">Home</a>
+        <a href="img_gallery.html" id="imgButton" class="button">Gallery</a>
+        <a href="current_members.html" id="membersButton"class="button">Current Members</a>
+        <a href="event_calendar.html" id="eventButton" class="button">Events</a>
+        <a href="contact_us.html" id="contactButton"class="button">Contact Us</a>
+    </nav>
+
+    <main>
+        <div>
+            <form>
+                <fieldset>
+                <legend>Contact Us using the below form.</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" value=""/> <br/>
+                <label for="Email">Name:</label>
+                <input type="text" name="Email" value=""/> <br/>
+                </fieldset>
+                </form>
+        </div>
+    </main>
+    
+    <aside></aside>
+    
+    <footer></footer>
+
+    <script>
+        document.getElementById("eventButton").addEventListener("click", function() {
+            window.location.href = "event_calendar.html";
+        });
+        document.getElementById("homeButton").addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+        document.getElementById("imgButton").addEventListener("click", function() {
+            window.location.href = "img_gallery.html";
+        });
+        document.getElementById("membersButton").addEventListener("click", function() {
+            window.location.href = "current_members.html";
+        });
+        document.getElementById("contactButton").addEventListener("click", function() {
+            window.location.href = "contact_us.html";
+        });
+    </script>
+</body>
+</html>
