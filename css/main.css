@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(168, 168, 168);
+    color: rgb(0, 0, 0);
+}
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(190,25,75);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+}
+.topRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+} 
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+grid-gap: 10px;
+}
+.gallery img {
+max-width: 100%;
+height: auto;
+border-radius: 5px;
+}
+
+table {
+    font-family: "Arial", sans-serif;
+    width: 100%;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  table td,
+  table th {
+    border: 2px solid #F0F0F0;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #F2F2F2;
+  }
+  
+  table tr:hover {
+    background-color: #F0F0F0; 
+  }
+  
+ 
+  table th {
+    background-color: rgb(190,25,75,255);
+    color: white;
+  }
+  
