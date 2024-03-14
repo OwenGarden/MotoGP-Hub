@@ -1,27 +1,16 @@
 <html>
 <head>
-    
     <title>MotoGP Hub</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='css/main.css'>
-    <!--<link rel='stylesheet' href='css/experiment.css'>-->
-    
-    <style>  
-    </style>
-
 </head>
-
 <body>
     <header><h1>MotoGP Hub</h1></header>
-
     <a href="index.html">
         <img src='images/motogp.png'
         height="150"
         width="150"
         class="topRight Logo">
-
+    </a>
     <nav>
         <a href="index.html" id="homeButton" class="button">Home</a>
         <a href="event_calendar.html" id="scheduleButton" class="button">Schedule</a>
@@ -31,59 +20,61 @@
 
     <main>
         <h2>Contact Us</h2>
-        <h3>Please utilise this form to indicate whether you have a suggestion for the website or are experiencing any issues.</h3>
-        <div>
-            <form>
-                <fieldset>
-                    <legend>Contact Us using the below form.</legend>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" value=""/> <br/>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" value=""/> <br/>
-                    
-                    <label for="membershipStatus">Membership Status:</label><br/>
-                    <input type="radio" id="member" name="membershipStatus" value="Member">
-                    <label for="member">Member</label><br/>
-                    <input type="radio" id="nonMember" name="membershipStatus" value="Non-Member">
-                    <label for="nonMember">Non-Member</label><br/>
-                    
-                    <label for="comments">Comments:</label>
-                    <input type="text" id="comments" name="comments" value=""/> <br/>
-                    
-                    <label for="fileAttachment">Attach a file:</label>
-                    <input type="file" id="fileAttachment" name="fileAttachment"><br/>
-                </fieldset>
-                <button type="button" onclick="refreshForm()">Send</button>
-            </form>
-        </div>
+        <h3>Please utilize this form to indicate whether you have a suggestion for the website or are experiencing any issues.</h3>
+    
+            <div class="left-column">
+                <form>
+                    <fieldset>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" value=""/><br/>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" value=""/><br/>
+                        
+                        <label for="membershipStatus">Membership Status:</label><br/>
+                        <input type="radio" id="member" name="membershipStatus" value="Member">
+                        <label for="member">Member</label><br/>
+                        <input type="radio" id="nonMember" name="membershipStatus" value="Non-Member">
+                        <label for="nonMember">Non-Member</label><br/>
+                        
+                        <label for="comments">Comments:</label>
+                        <input type="text" id="comments" name="comments" value=""/><br/>
+                        
+                        <label for="fileAttachment">Attach a file:</label>
+                        <input type="file" id="fileAttachment" name="fileAttachment"><br/>
+                    </fieldset>
+                    <button type="button" onclick="sendForm()">Send</button>
+                </form>
+                <div id="form_outcome"></div>
+                <p></p>
+            </div>
+            
+            <div class="right-column">
+                <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/MotoGP?ref_src=twsrc%5Etfw">Tweets by MotoGP</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            
     </main>
     
+    <aside></aside>
+    <footer></footer>
+
     <script>
-        function refreshForm() {
-            
-            document.getElementsByName("name")[0].value = "";
-            document.getElementsByName("email")[0].value = "";
-            document.getElementsByName("comments")[0].value = "";
+        function sendForm() {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("comments").value = "";
     
-            
             let checkButtons = document.getElementsByName("membershipStatus");
             for (let i = 0; i < checkButtons.length; i++) {
                 checkButtons[i].checked = false;
             }
     
-            
             document.getElementById("fileAttachment").value = "";
+    
+            document.getElementById("form_outcome").innerHTML = "Form has been sent successfully!";
         }
-    </script>
     
-    
-    
-    <aside></aside>
-    
-    <footer></footer>
-
-    <script>
-        document.querySelector("img.Logo").addEventListener("click", function() {
+        document.getElementById("Logo").addEventListener("click", function() {
             window.location.href = "index.html";
         });
         document.getElementById("scheduleButton").addEventListener("click", function() {
