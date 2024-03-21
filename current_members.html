@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     
     <title>MotoGP Hub</title>
     
@@ -14,10 +16,10 @@
     <header><h1>MotoGP Hub</h1></header>
 
     <a href="index.html">
-        <img src='images/motogp.png'
+        <img src='images/motogp.png' alt="MotoGP Logo"
         height="150"
         width="150"
-        class="topRight Logo">
+        class="topRight">
     </a>
 
 
@@ -25,7 +27,7 @@
         <a href="index.html" id="homeButton" class="button">Home</a>
         <a href="event_calendar.html" id="scheduleButton" class="button">Schedule</a>
         <a href="img_gallery.html" id="imgButton" class="button">Gallery</a>
-        <a href="contact_us.html" id="contactButton"class="button">Contact Us</a>
+        <a href="contact_us.html" id="contactButton" class="button">Contact Us</a>
     </nav>
 
     <main>
@@ -34,29 +36,31 @@
             <div class="row">
               <div class="col-sm">
                 <h5>1</h5>
-                    <img src='images/helmet.png' class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
+                    <img src='images/helmet.png' alt="Helmet1" class="rounded-circle massie-hovering" width="120" height="120" style="object-fit: cover;">
                     <h5>Me</h5>
               </div>
               <div class="col-sm">
                 <h5>2</h5>
-                    <img src='images/helmet.png' class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
+                    <img src='images/helmet.png' alt="Helmet2" class="rounded-circle massie-hovering" width="120" height="120" style="object-fit: cover;">
                     <h5>Not Me</h5>
               </div>
               <div class="col-sm">
                 <h5>3</h5>
-                    <img src='images/helmet.png' class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
+                    <img src='images/helmet.png' alt="Helmet3" class="rounded-circle massie-hovering" width="120" height="120" style="object-fit: cover;">
                     <h5>Not Me</h5>
               </div>
             <div class="col-sm">
                 <h5>4</h5>
-                    <img src='images/helmet.png' class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
+                    <img src='images/helmet.png' alt="Helmet4" class="rounded-circle massie-hovering" width="120" height="120" style="object-fit: cover;">
                     <h5>Not Me</h5>
               </div>
               <div class="col-sm">
                 <h5>5</h5>
-                    <img src='images/helmet.png' class="rounded-circle massie-hovering" width="120" height="120" preserveAspectRatio="xMidYMid slice" style="overflow:hidden">
+                    <img src='images/helmet.png' alt ="Helmet5" class="rounded-circle massie-hovering" width="120" height="120" style="object-fit: cover;">
                     <h5>Not Me</h5>
-          </div>
+                </div>
+            </div>
+        </div>
     </main>
     
     <aside></aside>
@@ -64,7 +68,7 @@
     <footer></footer>
 
     <script>
-        document.getElementById("img.Logo").addEventListener("click", function() {
+        document.getElementById("Logo").addEventListener("click", function() {
             window.location.href = "index.html";
         });
         document.getElementById("scheduleButton").addEventListener("click", function() {

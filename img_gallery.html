@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
    
     <title>MotoGP Hub</title>
    
@@ -14,18 +16,18 @@
     <header><h1>MotoGP Hub</h1></header>
 
     <a href="index.html">
-        <img src='images/motogp.png'
-        height="150"
-        width="150"
-        class="topRight Logo">
+      <img src='images/motogp.png' alt="MotoGP Logo"
+      height="150"
+      width="150"
+      class="topRight">
     </a>
 
 
     <nav>
         <a href="index.html" id="homeButton" class="button">Home</a>
         <a href="event_calendar.html" id="scheduleButton" class="button">Schedule</a>
-        <a href="current_members.html" id="membersButton"class="button">Members</a>
-        <a href="contact_us.html" id="contactButton"class="button">Contact Us</a>
+        <a href="current_members.html" id="membersButton" class="button">Members</a>
+        <a href="contact_us.html" id="contactButton" class="button">Contact Us</a>
     </nav>
 
     <main>
@@ -70,7 +72,7 @@
 
     <script>
         
-        document.querySelector(".topRight.Logo").addEventListener("click", function() {
+        document.querySelector("Logo").addEventListener("click", function() {
             window.location.href = "index.html";
         });
         document.getElementById("scheduleButton").addEventListener("click", function() {

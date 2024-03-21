@@ -1,21 +1,24 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+
     <title>MotoGP Hub</title>
     <link rel='stylesheet' href='css/main.css'>
 </head>
 <body>
     <header><h1>MotoGP Hub</h1></header>
     <a href="index.html">
-        <img src='images/motogp.png'
+        <img src='images/motogp.png' alt="MotoGP Logo"
         height="150"
         width="150"
-        class="topRight Logo">
+        class="topRight">
     </a>
     <nav>
         <a href="index.html" id="homeButton" class="button">Home</a>
         <a href="event_calendar.html" id="scheduleButton" class="button">Schedule</a>
         <a href="img_gallery.html" id="imgButton" class="button">Gallery</a>
-        <a href="current_members.html" id="membersButton"class="button">Members</a>
+        <a href="current_members.html" id="membersButton" class="button">Members</a>
     </nav>
 
     <main>
@@ -26,21 +29,21 @@
                 <form>
                     <fieldset>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" value=""/><br/>
+                        <input type="text" id="name" name="name" value=""><br>
                         <label for="email">Email:</label>
-                        <input type="text" id="email" name="email" value=""/><br/>
+                        <input type="text" id="email" name="email" value=""><br>
                         
-                        <label for="membershipStatus">Membership Status:</label><br/>
+                        <label>Membership Status:</label><br>
                         <input type="radio" id="member" name="membershipStatus" value="Member">
-                        <label for="member">Member</label><br/>
+                        <label for="member">Member</label><br>
                         <input type="radio" id="nonMember" name="membershipStatus" value="Non-Member">
-                        <label for="nonMember">Non-Member</label><br/>
-                        
+                        <label for="nonMember">Non-Member</label><br>
+
                         <label for="comments">Comments:</label>
-                        <input type="text" id="comments" name="comments" value=""/><br/>
+                        <input type="text" id="comments" name="comments" value=""><br>
                         
                         <label for="fileAttachment">Attach a file:</label>
-                        <input type="file" id="fileAttachment" name="fileAttachment"><br/>
+                        <input type="file" id="fileAttachment" name="fileAttachment"><br>
                     </fieldset>
                     <button type="button" onclick="sendForm()">Send</button>
                 </form>
@@ -50,7 +53,7 @@
             
             <div class="right-column">
                 <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/MotoGP?ref_src=twsrc%5Etfw">Tweets by MotoGP</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <script async src="https://platform.twitter.com/widgets.js"></script>
             </div>
             
     </main>

@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     
     <title>MotoGP Hub</title>
     
@@ -14,16 +16,17 @@
     <header><h1>MotoGP Hub</h1></header>
 
     <a href="index.html">
-        <img src='images/motogp.png'
+        <img src='images/motogp.png' alt="MotoGP Logo"
         height="150"
         width="150"
-        class="topRight Logo">
+        class="topRight">
+    </a>
 
     <nav>
         <a href="index.html" id="homeButton" class="button">Home</a>
         <a href="img_gallery.html" id="imgButton" class="button">Gallery</a>
-        <a href="current_members.html" id="membersButton"class="button">Members</a>
-        <a href="contact_us.html" id="contactButton"class="button">Contact Us</a>
+        <a href="current_members.html" id="membersButton" class="button">Members</a>
+        <a href="contact_us.html" id="contactButton" class="button">Contact Us</a>
     </nav>
 
     <main>
@@ -34,16 +37,16 @@
                     <td></td><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
                 </tr>
                 <tr>
-                    <th>4-10 Mar</th><td>Off day</td><td>Off day</td><td>Travel day</td><td>Media day<br/>Track walk</td><td>FP1<br/>FP2<br/>FP3</td><td>Qualifying<br/>Sprint race</td><td>Qatar GP</td>
+                    <th>4-10 Mar</th><td>Off day</td><td>Off day</td><td>Travel day</td><td>Media day<br>Track walk</td><td>FP1<br>FP2<br>FP3</td><td>Qualifying<br>Sprint race</td><td>Qatar GP</td>
                 </tr>
                 <tr>
-                    <th>18-24 Mar</th><td>Off day</td><td>Off day</td><td>Travel day</td><td>Media day<br/>Track walk</td><td>FP1<br/>FP2<br/>FP3</td><td>Qualifying<br/>Sprint race</td><td>Portugal GP</td>
+                    <th>18-24 Mar</th><td>Off day</td><td>Off day</td><td>Travel day</td><td>Media day<br>Track walk</td><td>FP1<br>FP2<br>FP3</td><td>Qualifying<br>Sprint race</td><td>Portugal GP</td>
                 </tr>
                 <tr>
-                    <th>8-16 Apr</th><td>Off day</td><td>Off day</td><td>Travel day</td><td>Media day<br/>Track walk</td><td>FP1<br/>FP2<br/>FP3</td><td>Qualifying<br/>Sprint race</td><td>Austin GP</td>
+                    <th>8-16 Apr</th><td>Off day</td><td>Off day</td><td>Travel day</td><td>Media day<br>Track walk</td><td>FP1<br>FP2<br>FP3</td><td>Qualifying<br>Sprint race</td><td>Austin GP</td>
                 </tr>
                 <tr>
-                    <th>22-28 Apr</th><td>Off day</td><td>Off day</td><td>Travel day</td><td>Media day<br/>Track walk</td><td>FP1<br/>FP2<br/>FP3</td><td>Qualifying<br/>Sprint race</td><td>Jerez GP</td>
+                    <th>22-28 Apr</th><td>Off day</td><td>Off day</td><td>Travel day</td><td>Media day<br>Track walk</td><td>FP1<br>FP2<br>FP3</td><td>Qualifying<br>Sprint race</td><td>Jerez GP</td>
                 </tr>
             </table>
             
@@ -55,7 +58,7 @@
     <footer></footer>
 
     <script>
-        document.getElementById("img.Logo").addEventListener("click", function() {
+        document.querySelector("Logo").addEventListener("click", function() {
             window.location.href = "index.html";
         });
         document.getElementById("homeButton").addEventListener("click", function() {

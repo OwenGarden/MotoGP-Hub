@@ -87,3 +87,11 @@ table {
   z-index: 1;
   display: none;
 }
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+img.rounded-circle {
+  object-fit: cover;
+}
