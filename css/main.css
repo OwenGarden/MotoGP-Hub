@@ -79,6 +79,14 @@ table {
   overflow-y: auto; 
 }
 
+.rounded-circle {
+  border-radius: 50%;
+}
+
+img.rounded-circle {
+  object-fit: cover;
+}
+
 .popup {
   position: absolute;
   background-color: #f9f9f9;
@@ -86,12 +94,4 @@ table {
   padding: 15px;
   z-index: 1;
   display: none;
-}
-
-.rounded-circle {
-  border-radius: 50%;
-}
-
-img.rounded-circle {
-  object-fit: cover;
 }
