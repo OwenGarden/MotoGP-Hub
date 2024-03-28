@@ -5,15 +5,16 @@
 
     <title>MotoGP Hub</title>
     <link rel='stylesheet' href='css/main.css'>
+    <script src="scripts.js"></script>
 </head>
 <body>
-    <header><h1>MotoGP Hub</h1></header>
+    
     <a href="index.html">
-        <img src='images/motogp.png' alt="MotoGP Logo"
-        height="150"
-        width="150"
-        class="topRight">
+        <img src='images/motogp.png' alt="MotoGP Logo" id="logo">
     </a>
+    
+    <h1 id="pageTitle">MotoGP Hub</h1>
+
     <nav>
         <a href="index.html" id="homeButton" class="button">Home</a>
         <a href="event_calendar.html" id="scheduleButton" class="button">Schedule</a>
@@ -58,40 +59,27 @@
             
     </main>
     
-    <aside></aside>
-    <footer></footer>
+    <footer>
+        <p>&copy; Owen Garden 2024</p>
+    </footer>
 
     <script>
-        function sendForm() {
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("comments").value = "";
     
-            let checkButtons = document.getElementsByName("membershipStatus");
-            for (let i = 0; i < checkButtons.length; i++) {
-                checkButtons[i].checked = false;
-            }
+    function sendForm() {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("comments").value = "";
     
-            document.getElementById("fileAttachment").value = "";
-    
-            document.getElementById("form_outcome").innerHTML = "Form has been sent successfully!";
+        let checkButtons = document.getElementsByName("membershipStatus");
+        for (let i = 0; i < checkButtons.length; i++) {
+            checkButtons[i].checked = false;
         }
     
-        document.getElementById(".topRight.Logo").addEventListener("click", function() {
-            window.location.href = "index.html";
-        });
-        document.getElementById("scheduleButton").addEventListener("click", function() {
-            window.location.href = "event_calendar.html";
-        });
-        document.getElementById("homeButton").addEventListener("click", function() {
-            window.location.href = "index.html";
-        });
-        document.getElementById("imgButton").addEventListener("click", function() {
-            window.location.href = "img_gallery.html";
-        });
-        document.getElementById("membersButton").addEventListener("click", function() {
-            window.location.href = "current_members.html";
-        });
+        document.getElementById("fileAttachment").value = "";
+    
+        document.getElementById("form_outcome").innerHTML = "Form has been sent successfully!";
+    }
+
     </script>
 </body>
 </html>

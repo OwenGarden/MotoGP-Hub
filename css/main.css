@@ -13,11 +13,19 @@ body {
     font-size: 16px;
     margin: 5px;
 }
-.topRight {
-    position: absolute;
-    top: 0;
-    right: 0;
-} 
+
+#logo {
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+#pageTitle {
+  display: inline;
+}
+
 .gallery {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -43,29 +51,31 @@ border-radius: 5px;
 table {
     font-family: "Arial", sans-serif;
     width: 100%;
-  }
-  
-  table {
     border-collapse: collapse;
   }
   
   table td,
-  table th {
-    border: 2px solid #F0F0F0;
-  }
-  
-  table tr:nth-child(even) {
-    background-color: #F2F2F2;
-  }
-  
-  table tr:hover {
-    background-color: #F0F0F0; 
-  }
-  
-  table th {
-    background-color: rgb(190,25,75,255);
-    color: white;
-  }
+table th {
+  border: 2px solid #F0F0F0;
+  text-align: center;
+  vertical-align: middle;
+  width: 12.5%; /* 100% divided by 8 columns */
+  font-size: 10pt;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+
+table tr:hover {
+  background-color: #F0F0F0;
+}
+
+table th {
+  background-color: rgb(190, 25, 75, 255);
+  color: white;
+}
 
   .left-column {
     float: left;
