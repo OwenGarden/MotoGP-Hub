@@ -18,6 +18,12 @@
         document.getElementById("contactButton").addEventListener("click", function() {
             window.location.href = "contact_us.html";
         });
+        document.getElementById("storeButton").addEventListener("click", function() {
+            window.location.href = "merch_store.html";
+        });
+        document.getElementById("riderButton").addEventListener("click", function() {
+            window.location.href = "riders.html";
+        });
       
 // Home page Login part
         function login() {
